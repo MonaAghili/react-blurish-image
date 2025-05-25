@@ -33,7 +33,7 @@
     "typescript",
     "bun"
   ],
-  "author": "Mona Aghili <your.email@example.com>",
+  "author": "Mona Aghili",
   "license": "MIT",
   "repository": {
     "type": "git",
