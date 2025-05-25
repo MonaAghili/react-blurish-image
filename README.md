@@ -1,6 +1,6 @@
-# React Optimized Image
+# React Blurish Image
 
-[![npm version](https://badge.fury.io/js/react-optimized-image.svg)](https://badge.fury.io/js/react-optimized-image)
+[![npm version](https://badge.fury.io/js/react-blurish-image.svg)](https://badge.fury.io/js/react-blurish-image)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 
@@ -22,25 +22,25 @@ A lightweight, high-performance React image component inspired by Next.js Image,
 ## 🚀 Installation
 
 ```bash
-bun add react-optimized-image
+bun add react-blurish-image
 ```
 
 ```bash
-npm install react-optimized-image
+npm install react-blurish-image
 ```
 
 ```bash
-yarn add react-optimized-image
+yarn add react-blurish-image
 ```
 
 ```bash
-pnpm add react-optimized-image
+pnpm add react-blurish-image
 ```
 
 ## 📖 Quick Start
 
 ```jsx
-import { Image } from "react-optimized-image";
+import { Image } from "react-blurish-image";
 
 function App() {
   return (
@@ -88,7 +88,7 @@ All standard HTML `<img>` attributes are supported: `className`, `style`, `cross
 ### Basic Usage with Blur Placeholder
 
 ```jsx
-import { Image } from "react-optimized-image";
+import { Image } from "react-blurish-image";
 
 <Image
   src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4"
@@ -170,7 +170,7 @@ Provide your own optimized blur placeholder:
 Get helpful warnings during development:
 
 ```jsx
-import { configureImage } from "react-optimized-image";
+import { configureImage } from "react-blurish-image";
 
 // Enable warnings during development
 if (process.env.NODE_ENV === "development") {
@@ -183,7 +183,7 @@ if (process.env.NODE_ENV === "development") {
 Integrate with your preferred CDN or image service:
 
 ```jsx
-import { Image, ImageLoader } from "react-optimized-image";
+import { Image, ImageLoader } from "react-blurish-image";
 
 // Cloudinary example
 const cloudinaryLoader: ImageLoader = ({ src, width, quality }) => {
@@ -300,7 +300,7 @@ function ImageGallery({ images }) {
 
 ## 🆚 Comparison with Alternatives
 
-| Feature                | react-optimized-image | Next.js Image       | react-image   | img tag     |
+| Feature                | react-blurish-image | Next.js Image       | react-image   | img tag     |
 | ---------------------- | --------------------- | ------------------- | ------------- | ----------- |
 | Bundle Size            | 🟢 Tiny (~8kb)        | 🟡 Large            | 🟢 Small      | 🟢 None     |
 | Framework Dependency   | 🟢 React only         | 🔴 Next.js required | 🟢 React only | 🟢 None     |
@@ -326,10 +326,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/MonaAghili/react-optimized-image)
-- [NPM Package](https://www.npmjs.com/package/react-optimized-image)
-- [Issues & Bug Reports](https://github.com/MonaAghili/react-optimized-image/issues)
-- [Feature Requests](https://github.com/MonaAghili/react-optimized-image/discussions)
+- [GitHub Repository](https://github.com/MonaAghili/react-blurish-image)
+- [NPM Package](https://www.npmjs.com/package/react-blurish-image)
+- [Issues & Bug Reports](https://github.com/MonaAghili/react-blurish-image/issues)
+- [Feature Requests](https://github.com/MonaAghili/react-blurish-image/discussions)
 
 ---
 

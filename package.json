@@ -37,12 +37,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MonaAghili/react-optimized-image.git"
+    "url": "https://github.com/MonaAghili/react-blurish-image.git"
   },
   "bugs": {
-    "url": "https://github.com/MonaAghili/react-optimized-image/issues"
+    "url": "https://github.com/MonaAghili/react-blurish-image/issues"
   },
-  "homepage": "https://github.com/MonaAghili/react-optimized-image#readme",
+  "homepage": "https://github.com/MonaAghili/react-blurish-image#readme",
   "engines": {
     "node": ">=16.0.0",
     "bun": ">=1.0.0"
