@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 
-import { Image, configureImage } from "../../src/index"
+import { Image, configureImage} from "react-blurish-image"
 
 function App() {
   const [placeholderType, setPlaceholderType] = useState<'blur' | 'empty'>('blur');

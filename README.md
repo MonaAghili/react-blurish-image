@@ -15,7 +15,7 @@ A lightweight, high-performance React image component inspired by Next.js Image,
 - 🎯 **Fill Mode** - Container-based sizing like CSS `object-fit`
 - 🛡️ **TypeScript** - Full type safety included out of the box
 - 🔧 **Configurable** - Optional development warnings and custom loaders
-- 📦 **Tiny Bundle** - No external dependencies, tree-shakeable
+- 📦 **Tiny Bundle** - Only 6.4kb (2.8kb gzipped), no external dependencies
 - 🚀 **Performance** - Optimized for Core Web Vitals and page speed
 - 🔒 **Privacy Safe** - No environment detection or data collection
 
@@ -297,28 +297,6 @@ function ImageGallery({ images }) {
   );
 }
 ```
-
-## 🆚 Comparison with Alternatives
-
-| Feature                | react-blurish-image | Next.js Image       | react-image   | img tag     |
-| ---------------------- | --------------------- | ------------------- | ------------- | ----------- |
-| Bundle Size            | 🟢 Tiny (~8kb)        | 🟡 Large            | 🟢 Small      | 🟢 None     |
-| Framework Dependency   | 🟢 React only         | 🔴 Next.js required | 🟢 React only | 🟢 None     |
-| Automatic Optimization | ✅                    | ✅                  | ❌            | ❌          |
-| Blur Placeholders      | ✅                    | ✅                  | ❌            | ❌          |
-| TypeScript Support     | ✅                    | ✅                  | ✅            | ✅          |
-| Lazy Loading           | ✅                    | ✅                  | ✅            | ✅ (native) |
-| Custom Loaders         | ✅                    | ✅                  | ❌            | ❌          |
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
