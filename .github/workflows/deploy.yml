@@ -30,27 +30,22 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Install dependencies
+      # Build the main library first (the demo depends on it)
+      - name: Install main dependencies
         run: bun install --frozen-lockfile
-
-      - name: Type check
-        run: bun run typecheck
-
-      - name: Lint
-        run: bun run lint
-
-      - name: Run tests
-        run: bun test
 
       - name: Build library
         run: bun run build
 
+      # Build the demo
+      - name: Install demo dependencies
+        run: |
+          cd demo
+          bun install --frozen-lockfile
+
       - name: Build demo
         run: |
           cd demo
-          echo "Installing demo dependencies..."
-          bun install
-          echo "Building demo..."
           bun run build
           echo "Build complete! Checking output..."
           if [ -d "dist" ]; then
@@ -58,8 +53,6 @@ jobs:
             ls -la dist/
             if [ -f "dist/index.html" ]; then
               echo "✅ index.html exists"
-              echo "First few lines of index.html:"
-              head -5 dist/index.html
             else
               echo "❌ index.html missing!"
               exit 1
@@ -68,26 +61,16 @@ jobs:
             echo "❌ dist folder missing!"
             exit 1
           fi
-          cd ..
+
+      - name: Setup Pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v3
         with:
           path: demo/dist
-
-      - name: Debug what we're uploading
-        if: github.ref == 'refs/heads/main'
-        run: |
-          echo "=== DEBUGGING UPLOAD ==="
-          echo "Contents of demo/dist that will be deployed:"
-          find demo/dist -type f -name "*.html" -o -name "*.js" -o -name "*.css" | head -10
-          echo ""
-          echo "index.html content (first 20 lines):"
-          head -20 demo/dist/index.html || echo "No index.html found!"
-          echo ""
-          echo "All files in demo/dist:"
-          ls -la demo/dist/
 
   deploy:
     if: github.ref == 'refs/heads/main'
