@@ -1,5 +1,5 @@
 {
-  "name": "react-blurimg",
+  "name": "react-blurish-image",
   "version": "1.0.0",
   "type": "module",
   "description": "A lightweight, optimized React image component with blur placeholders and lazy loading",
