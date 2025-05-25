@@ -42,7 +42,6 @@
   "bugs": {
     "url": "https://github.com/MonaAghili/react-blurish-image/issues"
   },
-  "homepage": "https://MonaAghili.github.io/react-blurish-image",
   "engines": {
     "node": ">=16.0.0",
     "bun": ">=1.0.0"
