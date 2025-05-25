@@ -1,0 +1,78 @@
+{
+  "name": "react-optimized-image",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A lightweight, optimized React image component with blur placeholders and lazy loading",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bun run rollup -c",
+    "build:types": "bun run tsc --emitDeclarationOnly",
+    "dev": "bun run rollup -c -w",
+    "prepublishOnly": "bun run build",
+    "test": "bun test",
+    "lint": "bun run eslint src --ext .ts,.tsx",
+    "lint:fix": "bun run eslint src --ext .ts,.tsx --fix",
+    "typecheck": "bun run tsc --noEmit"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "optimization",
+    "lazy-loading",
+    "blur-placeholder",
+    "responsive",
+    "nextjs-alternative",
+    "performance",
+    "typescript",
+    "bun"
+  ],
+  "author": "Mona Aghili <your.email@example.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MonaAghili/react-optimized-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MonaAghili/react-optimized-image/issues"
+  },
+  "homepage": "https://github.com/MonaAghili/react-optimized-image#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "bun": ">=1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/bun": "latest",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.41.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.6.0"
+  },
+  "trustedDependencies": [
+    "@rollup/plugin-typescript",
+    "rollup"
+  ]
+}
