@@ -4,22 +4,22 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 
-A lightweight, high-performance React image component inspired by Next.js Image, with automatic optimization, blur placeholders, and lazy loading. **Zero dependencies** except React.
+A lightweight, high-performance React image component inspired by Next.js Image, with automatic optimization, blur placeholders, and lazy loading. Zero dependencies except React.
 
-## ✨ Features
+## Features
 
-- 🖼️ **Automatic Image Optimization** - Generates responsive images with srcSet
-- 🔄 **Blur Placeholders** - Smooth loading transitions with automatic blur generation
-- ⚡ **Lazy Loading** - Built-in lazy loading for better performance
-- 📱 **Responsive** - Perfect for any screen size with automatic srcSet generation
-- 🎯 **Fill Mode** - Container-based sizing like CSS `object-fit`
-- 🛡️ **TypeScript** - Full type safety included out of the box
-- 🔧 **Configurable** - Optional development warnings and custom loaders
-- 📦 **Tiny Bundle** - Only 6.4kb (2.8kb gzipped), no external dependencies
-- 🚀 **Performance** - Optimized for Core Web Vitals and page speed
-- 🔒 **Privacy Safe** - No environment detection or data collection
+- Automatic Image Optimization - Generates responsive images with srcSet
+- Blur Placeholders - Smooth loading transitions with automatic blur generation
+- Lazy Loading - Built-in lazy loading for better performance
+- Responsive - Perfect for any screen size with automatic srcSet generation
+- Fill Mode - Container-based sizing like CSS object-fit
+- TypeScript - Full type safety included out of the box
+- Configurable - Optional development warnings and custom loaders
+- Tiny Bundle - Only 6.4kb (2.8kb gzipped), no external dependencies
+- Performance - Optimized for Core Web Vitals and page speed
+- Privacy Safe - No environment detection or data collection
 
-## 🚀 Installation
+## Installation
 
 ```bash
 bun add react-blurish-image
@@ -37,7 +37,7 @@ yarn add react-blurish-image
 pnpm add react-blurish-image
 ```
 
-## 📖 Quick Start
+## Quick Start
 
 ```jsx
 import { Image } from "react-blurish-image";
@@ -56,7 +56,7 @@ function App() {
 }
 ```
 
-## 🎛️ API Reference
+## API Reference
 
 ### Props
 
@@ -83,7 +83,7 @@ function App() {
 
 All standard HTML `<img>` attributes are supported: `className`, `style`, `crossOrigin`, `referrerPolicy`, `decoding`, `fetchPriority`, etc.
 
-## 📚 Examples
+## Examples
 
 ### Basic Usage with Blur Placeholder
 
@@ -163,11 +163,11 @@ Provide your own optimized blur placeholder:
 />
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Enable Development Warnings
 
-Get helpful warnings during development:
+Enable helpful warnings during development to catch common issues like missing alt text, incorrect dimensions, or performance problems:
 
 ```jsx
 import { configureImage } from "react-blurish-image";
@@ -177,6 +177,13 @@ if (process.env.NODE_ENV === "development") {
   configureImage({ enableWarnings: true });
 }
 ```
+
+Development warnings help you:
+- Identify images without proper alt text for accessibility
+- Detect missing width/height attributes that cause layout shift
+- Warn about potential performance issues
+- Alert you to incorrectly configured props
+- Catch common mistakes before they reach production
 
 ### Custom Image Loader
 
@@ -209,7 +216,7 @@ const vercelLoader: ImageLoader = ({ src, width, quality }) => {
 />;
 ```
 
-## 🎨 Styling Examples
+## Styling Examples
 
 ### With CSS Classes
 
@@ -241,16 +248,16 @@ const vercelLoader: ImageLoader = ({ src, width, quality }) => {
 />
 ```
 
-## 🚀 Performance Tips
+## Performance Tips
 
-1. **Always provide dimensions**: Use `width` and `height` to prevent layout shift
-2. **Use blur placeholders**: Add `placeholder="blur"` for better perceived performance
-3. **Optimize quality**: Use `quality={85}` for the best balance of size and quality
-4. **Enable priority loading**: Use `priority` for above-the-fold images
-5. **Leverage responsive images**: Use the `sizes` prop for responsive layouts
-6. **Custom loaders**: Integrate with CDNs for optimal delivery and caching
+1. Always provide dimensions: Use `width` and `height` to prevent layout shift
+2. Use blur placeholders: Add `placeholder="blur"` for better perceived performance
+3. Optimize quality: Use `quality={85}` for the best balance of size and quality
+4. Enable priority loading: Use `priority` for above-the-fold images
+5. Leverage responsive images: Use the `sizes` prop for responsive layouts
+6. Custom loaders: Integrate with CDNs for optimal delivery and caching
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Error Handling
 
@@ -298,17 +305,15 @@ function ImageGallery({ images }) {
 }
 ```
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Links
+## Links
 
 - [GitHub Repository](https://github.com/MonaAghili/react-blurish-image)
 - [NPM Package](https://www.npmjs.com/package/react-blurish-image)
 - [Issues & Bug Reports](https://github.com/MonaAghili/react-blurish-image/issues)
 - [Feature Requests](https://github.com/MonaAghili/react-blurish-image/discussions)
 
----
-
-Made with ❤️ by [Mona Aghili](https://github.com/MonaAghili)
+Made with love by [Mona Aghili](https://github.com/MonaAghili)
